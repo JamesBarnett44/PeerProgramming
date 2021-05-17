@@ -14,17 +14,20 @@ public class Runner {
 	}
 
 
-	public static void factorial(float input) {
+	public static String factorial(float input) {
 		int count = 1;
+		String output = "";
 		while (input > 1) {
 			count++;
 			input /= count;
 		}
 		if (input == 1) {
 			System.out.println(count + "!");
+			output += Integer.toString(count) + "!";
 		} else {
 			System.out.println("NONE");
 		}
+		return output;
 	}
 
 }
